@@ -9,22 +9,128 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+	.post-item
+		.post-inf
+			.post-text-small
+				h3
+					line-height: 20px
+				p
+					line-height: 18px
+			.post-date
+				span
+					padding-top: 1px
+					font-size: 14px
+			.post-cat
+				font-size: 20px
+
+	.pagination-wrap
+		.pagination-items
+			.num-btn
+				ul
+					li
+						a
+							font-size: 14px
+			.next-btn, .prev-btn
+				font-size: 14px
+
+
+
+
 
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
-	/**/
+	nav
+		ul
+			li
+				a
+					font-size: 14px
+
+	.pagination-wrap
+		.pagination-items
+			.num-btn
+				ul
+					li
+						a
+							width: 50%
+
+
 
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
-	/**/
+	.post-item
+		.post-inf
+			flex-flow: row wrap
+			.post-cat
+				flex: 1
+				height: 40px
+				font-size: 18px
+				span
+					padding: 2px 3px 0px
+					margin: auto
+					line-height: 35px
+			.post-date
+				flex: 1
+				height: 38px
+				margin-top: 2px
+				font-size: 18px
+				flex-direction: row
+				.gray-line
+					display: none
+				.date-wrap
+					display: flex
+					flex-flow: row wrap
+					justify-content: center
+					margin-top: 7px
+					.day
+						flex: 1
+						font-size: 20px
+						font-weight: 600
+						line-height: 20px
+						// margin-left: 20px
+					.month
+						flex: 3
+						// margin-right: 20px
+
+	.pagination-wrap
+		.pagination-items
+			.num-btn
+				ul
+					li
+						a
+							width: 50%
+				
+
+				
+		.post-text-wrap
+			display: flex
+			flex-flow: column wrap
+			.post-text-small
+				flex: 1
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
+@media only screen and (max-width : 375px)
+	.post-item
+		.post-inf
+			.post-date
+				.date-wrap
+					margin-top: 0px
+
+	.pagination-wrap
+		.pagination-items
+
+			.num-btn
+				ul
+					li
+						a
+							width: 70%
+							font-size: 12px
+			.next-btn, .prev-btn
+				width: 100%
+				font-size: 12px
+					
 
 
 /*==========  Mobile First  ==========*/
@@ -36,7 +142,11 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px)
-	/**/
+	.post-item
+		.post-text-wrap
+			display: flex
+			flex-flow: column wrap
+			flex: 6
 
 
 /* Small Devices, Tablets */

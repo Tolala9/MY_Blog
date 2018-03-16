@@ -127,34 +127,34 @@ nav
 		flex: 1
 		display: flex
 		justify-content: space-between
-	li
-		flex: 1
-		width: 30%
-		display: flex
-		// flex-direction: row
-		a
-			margin: auto
-			text-transform: uppercase
-			color: $white
-			font-weight: 300
-			&:hover, &:focus
-				text-decoration: none
-				color: $white
-				font-weight: 500
-				letter-spacing: 0.5px
-			&:active 
-				color: $dark_text
-				background-color: $white
-		&.active
+		li
+			flex: 1
+			width: 30%
+			display: flex
+			// flex-direction: row
 			a
-				color: $dark_text
-				background-color: $white
-				padding: 0 5px
+				margin: auto
+				text-transform: uppercase
+				color: $white
+				font-weight: 300
 				&:hover, &:focus
+					text-decoration: none
+					color: $white
+					font-weight: 500
+					letter-spacing: 0.5px
+				&:active 
 					color: $dark_text
 					background-color: $white
-					letter-spacing: 0px
-					font-weight: 300
+			&.active
+				a
+					color: $dark_text
+					background-color: $white
+					padding: 0 5px
+					&:hover, &:focus
+						color: $dark_text
+						background-color: $white
+						letter-spacing: 0px
+						font-weight: 300
 
 /* POST ITEM */
 .post-item
@@ -212,7 +212,9 @@ nav
 				flex: 1
 				background-color: $bg
 				width: 100%
-
+	.post-text-wrap
+		display: flex
+		// flex: 6
 		.post-text-small
 			flex: 6
 			background-color: $white
@@ -222,6 +224,7 @@ nav
 				font-size: 20px
 				font-weight: 500
 				margin: 10px 20px 5px
+				line-height: 24px
 			p
 				font-size: 14px
 				font-weight: 300
@@ -246,8 +249,9 @@ nav
 					float: right
 					.far
 						font-size: 12px
-					.fa-star	
-						margin-right: 0
+			
+
+
 
 /* PAGINATION */	
 .pagination-wrap
