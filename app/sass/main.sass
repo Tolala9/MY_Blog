@@ -45,7 +45,9 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
-	
+
+*::selection
+	background-color: $accent
 
 a
 	&:hover
@@ -196,7 +198,7 @@ nav
 			span
 				margin: auto
 				font-size: 16px
-				line-height: 20px
+				line-height: 17px
 				text-align: center
 				flex: 15
 				padding: 5px 3px 0px
@@ -219,11 +221,11 @@ nav
 				color: $dark_text
 				font-size: 20px
 				font-weight: 500
-				margin: 10px 20px 10px
+				margin: 10px 20px 5px
 			p
 				font-size: 14px
 				font-weight: 300
-				margin: 10px 20px 10px
+				margin: 0px 20px 10px
 				text-align: justify
 			.gray-line
 				display: block
@@ -231,14 +233,93 @@ nav
 				width: 93%
 				height: 1px
 				margin: 0 20px 
+			.post-footer
+				margin: 5px 20px 10px
+				font-size: 14px
+				color: $light_text
+				.far
+					font-size: 12px
+					color: $light_text
+					margin-right: 10px
+				.post-action
+					display: inline-block
+					float: right
+					.far
+						font-size: 12px
+					.fa-star	
+						margin-right: 0
+
+/* PAGINATION */	
+.pagination-wrap
+	margin: 40px 40px
+	.pagination-items
+		display: flex
+		justify-content: space-betwen
+		
+		.num-btn
+			flex: 2
+			display: flex
+			ul
+				list-style-type: none
+				padding: 0
+				margin: 0
+				flex: 1
+				display: flex
+				justify-content: space-between
+				li
+					flex: 1
+					display: flex
+					a
+						display: flex
+						margin: auto
+						text-transform: uppercase
+						color: $white
+						font-size: 15px
+						font-weight: 300
+						background-color: $light_text
+						width: 70%
+						&:hover, &:focus
+							text-decoration: none
+							color: $dark_text
+							background-color: $white
+						&:active 
+							color: $dark_text
+							background-color: $white
+					span
+						margin: auto
+					&.active
+						a
+							color: $dark_text
+							background-color: $white
+							font-weight: 400
+							&:hover, &:focus
+								color: $dark_text
+								background-color: $white
+								font-weight: 400
+
+		.next-btn, .prev-btn
+			flex: 1
+			display: flex
+			a
+				display: flex
+				margin: auto
+				background-color: $light_text
+				color: $white
+				width: 70%
+				&:hover, &:focus
+					text-decoration: none
+					color: $dark_text
+					background-color: $white
+				span
+					text-transform: uppercase
+					margin: auto
 
 
 
 
 
 
-
-
+	
 
 
 

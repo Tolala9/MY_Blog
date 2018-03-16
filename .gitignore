@@ -6,3 +6,5 @@
 /**/*.psd
 /**/Thumbs.db
 /**/*.DS_Store
+
+/app/img/post_3.jpg
