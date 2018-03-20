@@ -169,12 +169,8 @@ a
 			font-size: 14px
 			background-color: $white
 			line-height: 30px
-
-			
-		
-
-
 /* END PAGE TITLE */
+
 
 /* POST ITEM */
 .post-item
@@ -449,7 +445,29 @@ $h: 3px
 						background-color: rgba(255,255,255,.08)
 /* END TOGGLE MENU */
 
-	
+/* TOP BUTTON */
+.top
+	position: fixed
+	bottom: 20px
+	// right: 100px
+	right: -100px
+	// transform: rotate(90deg) 
+	font-size: 28px 
+	z-index: 12
+	// border-radius: 10px 
+	background-color: $white
+	width: 64px
+	height: 64px
+	text-align: center
+	line-height: 64px
+	cursor: pointer
+	tansition: all .3s ease
+	opacity: .5
+	&:hover
+		opacity: 1
+	&.active
+		right: 20px
+/* END TOP BUTTON */
 
 
 
