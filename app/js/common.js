@@ -22,6 +22,7 @@ $(".top-mnu li a").click(function() {
 }).append("<span>");
 /* END TOGGLE MENU */
 
+/*SCROLL BUTTON*/
 $(window).scroll(function() {
 		if ($(this).scrollTop() > $(this).height()) {
 			$('.top').addClass('active');
@@ -32,6 +33,6 @@ $(window).scroll(function() {
 	$('.top').click(function() {
 		$('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');
 	});
-
+/* END SCROLL BUTTON*/
 
 });
