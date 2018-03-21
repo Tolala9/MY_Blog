@@ -35,4 +35,21 @@ $(window).scroll(function() {
 	});
 /* END SCROLL BUTTON*/
 
+/* SEARCH FIELD */
+	$(".toggle-mnu, .menu_item").click(function() {
+  $(".sandwich").toggleClass("active");
+});
+
+$(".search-box").click(function(){
+	if ($(".search-field").is(":visible")) {
+		$(".search-field").fadeOut(600);
+		
+	} else {
+		$(".search-field").fadeIn(600);
+	};
+}); 
+
+
+/* END SEARCH FIELD */
+
 });

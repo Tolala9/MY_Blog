@@ -4,11 +4,25 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+	.header-line
+		form.search-field
+			input[type=text]
+				width: 75%
+			button.submit 
+				.fab
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	.header-line
+		form.search-field
+			input[type=text]
+				width: 70%
+			button.submit 
+				.fab
+					font-size: 16px
+
+
 	.post-item
 		.post-inf
 			.post-text-small
@@ -47,7 +61,14 @@
 				a
 					font-size: 14px
 					
-
+	.header-line
+		form.search-field
+			input[type=text]
+				width: 55%
+			button.submit 
+				width: 20%
+				.fab
+					font-size: 16px
 
 	.pagination-wrap
 		.pagination-items

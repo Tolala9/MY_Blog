@@ -23,7 +23,15 @@
 	-moz-user-select: none
 	-ms-user-select: none
 	user-select: none
-																	
+
+// .row-no-padding-left > [class*="col-"]
+// 	padding-left: 0 !important;		
+.nopadding-left
+	padding-left: 0 !important;
+
+.nopadding-right
+	padding-right: 0 !important;
+
 
 
 body input:focus:required:invalid,
@@ -112,6 +120,31 @@ a
 			color: $accent
 		sup
 			font-size: 25px
+	form.search-field
+		display: none
+		background-color: $white
+		padding: 0
+		// margin-top: 3px
+		input[type=text]
+			width: 80%
+			border: none
+			outline: none
+			padding-left: 5px
+			line-height: 38px
+			background-color: $white
+			text-transform: uppercase
+		button.submit 
+			background-color: $white
+			border:none
+			display: inline-block
+			border: none
+			text-decoration: none
+			border-radius: 0px
+			outline: none
+			.fab
+				color: $accent
+				font-size: 18px
+
 
 .menu-line
 	display: flex
