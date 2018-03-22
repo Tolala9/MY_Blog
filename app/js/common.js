@@ -58,11 +58,20 @@ if ($(window) .width() < 480 ) {
 	}); 
 }
 else	{
-	
 }
-
-
 /* END SEARCH FIELD  for xs devices*/
+
+/* Active tab on menu */
+$(".menu-line ul li").click(function () {
+    $(".menu-line ul li").removeClass("active");
+    $(".menu-line-footer ul li").removeClass("active");
+    $(this).addClass("active");   
+});
+
+
+/* end Active tab on menu */
+
+
 
 
 
