@@ -54,6 +54,13 @@ body
 	overflow-x: hidden
 	opacity: 1
 
+button
+	border: none
+	text-decoration: none
+	border-radius: 0px
+	outline: none
+
+
 *::selection
 	background-color: $accent
 
@@ -87,7 +94,7 @@ a
 
 
 
-
+/* ********** BLOG PAGE STLE ************* */
 
 /* HEADER */
 .header-line
@@ -394,7 +401,6 @@ a
 
 
 /* TOGGLE BUTTON */	
-
 $w: 28px
 $h: 3px
 
@@ -451,7 +457,6 @@ $h: 3px
 		opacity: 0
 		top: 0
 		transform: rotate(180deg)
-
 /* END TOGGLE BUTTON */	
 
 /* TOGGLE MENU */
@@ -527,6 +532,165 @@ $h: 3px
 	&.active
 		right: 20px
 /* END TOP BUTTON */
+/* ********** END BLOG PAGE STLE ************* */
+
+
+/* ********** HOME PAGE STLE ************* */
+.home-title
+	font-family: "cinzel-ex", sans-serif
+	font-weight: 400
+	color: $dark_text
+	h2
+		text-transform: uppercase
+		font-size: 26px
+		text-align: center
+		margin-top: 40px
+		margin-bottom: 10px
+		line-height: 26px
+	h3
+		text-transform: uppercase
+		font-size: 19px
+		text-align: center
+		margin-top: 0
+	p.quote
+		font-size: 17px
+		text-align: justify
+		line-height: 20px
+		margin-bottom: 0px
+	p.author-quote
+		font-size: 17px
+		text-align: right
+		line-height: 17px
+		color: $accent
+		margin-top: 0px
+		margin-bottom: 0
+
+.home-image
+	margin: 35px 0 40px
+
+/* FOLLOW SECTION */
+.home-follow
+	display: flex
+	justify-content: space-between
+	height: 60px
+	margin-bottom: 40px
+
+	.home-follow-box
+		flex-basis: 30%
+		display: flex
+		background-color: $white
+		font-size: 25px
+		text-transform: uppercase
+		font-weight: 300
+		line-height: 25px
+		p
+			margin: auto
+
+	
+	a.folow-item
+		flex-basis: 8%
+		display: flex
+		line-height: 50px
+		font-size: 20px
+		background-color: $light_block
+		i
+			margin: auto
+			color: $light_text
+		&:hover, &:focus
+			i
+				color: $accent
+/* END FOLLOW SECTION */
+
+/* CONTACT SECTION */
+.contact-flex-wrap
+	display: flex
+	justify-content: space-between
+	height: 90px
+	margin-bottom: 18px
+
+	.home-contact-box
+		flex-basis: 30%
+		display: flex
+		background-color: $white
+		font-size: 25px
+		text-transform: uppercase
+		font-weight: 300
+		line-height: 25px
+		p
+			margin: auto
+
+	.credential-box
+		flex-basis: 30%
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		input
+			background-color: $white
+			padding-left: 5px
+			font-size: 14px
+			letter-spacing: 1px
+			text-transform: uppercase
+			font-weight: 300
+			line-height: 34px
+			border: none
+			&:focus
+				outline: none
+			.name-field
+				flex-basis: 40%
+				// background-color: $white
+			.email-field
+				flex-basis: 40%
+				// background-color: $white
+
+
+	textarea.message
+		flex-basis: 30%
+		display: flex
+		background-color: $white
+		padding-left: 5px
+		font-size: 14px
+		letter-spacing: 1px
+		font-weight: 300
+		line-height: 20px
+		border: none
+		resize: none
+		&:focus
+			outline: none
+
+.contact-send
+	display: inline-block
+	flex: 1	
+	width: 100%
+	height: 30px
+	font-size: 22px
+	text-transform: uppercase
+	font-weight: 300
+	line-height: 25px
+	transition: ease 0.7s
+	margin-bottom: 40px
+	p
+		margin: auto
+		letter-spacing: 6px
+	&:hover
+		background-color: $accent
+		color: $white
+	
+/* END CONTACT SECTION */
+
+.copyright
+	display: flex
+	width: 100%
+	background-color: transparent
+	margin-bottom: 40px
+	p
+		margin: auto
+		text-transform: uppercase
+		font-size: 14px
+		font-weight: 300
+		line-height: 14px
+		letter-spacing: 3px
+
+/* ********** HOME PAGE STLE ************* */
 
 
 

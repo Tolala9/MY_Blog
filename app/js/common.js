@@ -67,10 +67,9 @@ $(".menu-line ul li").click(function () {
     $(".menu-line-footer ul li").removeClass("active");
     $(this).addClass("active");   
 });
-
-
 /* end Active tab on menu */
 
+$("input,select,textarea").jqBootstrapValidation();
 
 
 
