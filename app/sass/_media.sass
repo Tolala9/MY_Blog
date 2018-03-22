@@ -12,6 +12,11 @@
 				.fab
 
 
+	.home-follow
+		a.folow-item
+			flex-basis: 10%
+
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
 	.header-line
@@ -47,7 +52,9 @@
 			.next-btn, .prev-btn
 				font-size: 14px
 
-
+	.home-follow
+		a.folow-item
+			flex-basis: 13%
 
 
 
@@ -85,6 +92,12 @@
 		line-height: 40px
 		&.active
 			right: 30px
+
+
+
+	.home-follow
+		a.folow-item
+			flex-basis: 12%
 
 
 /* Extra Small Devices, Phones */
@@ -163,6 +176,63 @@
 			flex-flow: column wrap
 			.post-text-small
 				flex: 1
+
+
+	.home-title
+		h2
+			font-size: 22px
+			line-height: 22px
+		h3
+			font-size: 16px
+			line-height: 20px
+		p.quote
+			font-size: 14px
+			line-height: 17px
+		p.author-quote
+			font-size: 14px
+			line-height: 14px
+
+	.home-follow
+		height: 45px
+		.home-follow-box
+			font-size: 18px
+			line-height: 18px
+			text-align: center
+		a.folow-item
+			flex-basis: 13%
+			font-size: 16px
+
+
+	.contact-flex-wrap
+		flex-direction: column
+		height: 200px
+		margin-bottom: 10px
+		.home-contact-box
+			flex-basis: 20%
+			font-size: 18px
+			line-height: 18px
+			text-align: center
+		.credential-box
+			flex-basis: 40%
+			input
+				font-size: 12px
+				.name-field
+					flex-basis: 50%
+				.email-field
+					flex-basis: 50%
+		textarea.message
+			flex-basis: 30%
+			font-size: 12px
+
+	.contact-send
+		font-size: 18px
+
+	.copyright
+		p
+			font-size: 12px
+
+
+
 
 
 /* Custom, iPhone Retina */ 

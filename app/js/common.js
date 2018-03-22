@@ -69,7 +69,7 @@ $(".menu-line ul li").click(function () {
 });
 /* end Active tab on menu */
 
-$("input,select,textarea").jqBootstrapValidation();
+
 
 
 
