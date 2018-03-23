@@ -16,6 +16,21 @@
 		a.folow-item
 			flex-basis: 10%
 
+	.wide-row
+		a.category-item
+			width: 19%
+			height: 120px
+			margin: 40px 10px 0px
+			p
+				font-size: 25px
+				line-height: 27px
+			i
+				font-size: 38px
+		a.category-item:nth-child(even)
+			width: 25%
+			height: 120px
+			margin: 40px 10px 0px
+
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
@@ -55,6 +70,22 @@
 	.home-follow
 		a.folow-item
 			flex-basis: 13%
+
+
+	.wide-row
+		a.category-item
+			width: 22%
+			height: 100px
+			margin: 40px 5px 0px
+			p
+				font-size: 20px
+				line-height: 20px
+			i
+				font-size: 38px
+		a.category-item:nth-child(even)
+			width: 28%
+			height: 100px
+			margin: 40px 5px 0px
 
 
 
@@ -98,6 +129,22 @@
 	.home-follow
 		a.folow-item
 			flex-basis: 12%
+
+
+	.wide-row
+		a.category-item
+			width: 22%
+			height: 140px
+			margin: 40px 5px 0px
+			p
+				font-size: 20px
+				line-height: 20px
+			i
+				font-size: 38px
+		a.category-item:nth-child(even)
+			width: 28%
+			height: 140px
+			margin: 40px 5px 0px
 
 
 /* Extra Small Devices, Phones */
@@ -231,6 +278,22 @@
 		p
 			font-size: 12px
 
+	
+
+	.wide-row
+		a.category-item
+			width: 22%
+			height: 100px
+			margin: 40px 5px 0px
+			p
+				font-size: 18px
+				line-height: 20px
+			i
+				font-size: 30px
+		a.category-item:nth-child(even)
+			width: 28%
+			height: 100px
+			margin: 40px 5px 0px
 
 
 
@@ -263,6 +326,22 @@
 			.next-btn, .prev-btn
 				width: 100%
 				font-size: 12px
+
+
+	.wide-row
+		a.category-item
+			width: 22%
+			height: 80px
+			margin: 40px 5px 0px
+			p
+				font-size: 16px
+				line-height: 18px
+			i
+				font-size: 28px
+		a.category-item:nth-child(even)
+			width: 28%
+			height: 80px
+			margin: 40px 5px 0px
 					
 
 
@@ -300,5 +379,25 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
-	/**/
+	.wide-row
+		a.category-item
+			width: 20%
+			height: 140px
+			margin: 40px 20px 0px
+			p
+				font-size: 25px
+				line-height: 27px
+				text-align: center
+			i
+				font-size: 38px
+		a.category-item:nth-child(even)
+			width: 30%
+			height: 140px
+			margin: 40px 20px 0px
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-height : 900px)
+	.pw-category
+		margin-bottom: 240px
 
