@@ -689,8 +689,86 @@ $h: 3px
 		font-weight: 300
 		line-height: 14px
 		letter-spacing: 3px
+/* ********** END HOME PAGE STLE ************* */
 
-/* ********** HOME PAGE STLE ************* */
+
+/* ********** CATEGORY PAGE STLE ************* */
+.wide-row
+	display: flex
+	font-size: "dosis-ex", sans-serif
+	justify-content: space-between
+	flex-direction: row
+	flex-wrap: wrap
+	a.category-item
+		display: flex
+		width: 20%
+		height: 140px
+		margin: 40px 20px 0px
+		background-color: $light_text
+		color: $white
+		flex-direction: column
+		transition: ease 0.3s
+		p
+			margin: auto
+			margin-top: 0
+			font-size: 25px
+			font-weight: 300
+			text-transform: uppercase
+		i
+			margin: auto
+			margin-bottom: 10px
+			font-size: 38px
+		&:hover
+			background-color: $accent
+
+	a.category-item:nth-child(even)
+		display: flex
+		width: 30%
+		height: 140px
+		margin: 40px 20px 0px
+		background-color: $light_text
+		color: $white
+		flex-direction: column
+		transition: ease 0.3s	
+		&:hover
+			background-color: $accent
+
+	
+		
+
+
+	// a.category-item:nth-child(3n+0)
+	// 	display: flex
+	// 	// width: 30%
+	// 	height: 140px
+	// 	margin: 40px 0px 0px 20px
+	// 	background-color: $light_text
+	// 	color: $white
+	// 	flex-direction: column
+	// 	transition: ease 0.3s	
+	// 	&:hover
+	// 		background-color: $accent
+
+	// a.category-item:nth-child( 2n+3), a.category-item:first-child
+	// 	display: flex
+	// 	// width: 30%
+	// 	height: 140px
+	// 	margin: 40px 20px 0px 0px
+	// 	background-color: $light_text
+	// 	color: $white
+	// 	flex-direction: column
+	// 	transition: ease 0.3s	
+	// 	&:hover
+	// 		background-color: $accent
+
+
+
+
+
+
+
+
+/* ********** END HOME CATEGORY STLE ************* */
 
 
 
