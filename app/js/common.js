@@ -69,8 +69,17 @@ $(".menu-line ul li").click(function () {
 });
 /* end Active tab on menu */
 
+/* Preloader */
+$(window).on('load', function() {
+		$('.preloader').delay(100).fadeOut('slow');
+	});
+/* END Preloader */
 
-
+/* Preloader */
+$(window).on('load', function() {
+		$('.lds-wedges, .lds-css').delay(50).fadeOut('slow');
+	});
+/* END Preloader */
 
 
 

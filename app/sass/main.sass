@@ -92,10 +92,96 @@ ul
 .text-center
 	text-align: center
 
-// .number
-// 	font-family: firasans-ex, sans-serif
 
 
+/* ********** Page Preloader ************* */
+.lds-css, .ng-scope
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	z-index: 300
+	background-color: $bg
+
+@keyframes lds-wedges
+	0%
+		-webkit-transform: rotate(0deg)
+		transform: rotate(0deg)
+
+	100%
+		-webkit-transform: rotate(360deg)
+		transform: rotate(360deg)
+
+
+@-webkit-keyframes lds-wedges
+	0%
+		-webkit-transform: rotate(0deg)
+		transform: rotate(0deg)
+
+	100%
+		-webkit-transform: rotate(360deg)
+		transform: rotate(360deg)
+
+
+.lds-wedges
+	position: relative
+	left: 50%
+	top: 50vh
+	margin: 
+		left: -100px
+		top: -100px
+	> div
+		> div
+			-webkit-transform-origin: 100px 100px
+			transform-origin: 100px 100px
+			-webkit-animation: lds-wedges 3s linear infinite
+			animation: lds-wedges 3s linear infinite
+			opacity: 0.8
+			> div
+				position: absolute
+				left: 30px
+				top: 30px
+				width: 70px
+				height: 70px
+				border-radius: 70px 0 0 0
+				-webkit-transform-origin: 100px 100px
+				transform-origin: 100px 100px
+		div
+			&:nth-child(1)
+				> div
+					background: #28B78C
+					-webkit-transform: rotate(0deg)
+					transform: rotate(0deg)
+				-webkit-animation-duration: 0.75s
+				animation-duration: 0.75s
+			&:nth-child(2)
+				> div
+					background: #2ed1a0
+					-webkit-transform: rotate(0deg)
+					transform: rotate(0deg)
+				-webkit-animation-duration: 1s
+				animation-duration: 1s
+			&:nth-child(3)
+				> div
+					background: #58dab3
+					-webkit-transform: rotate(0deg)
+					transform: rotate(0deg)
+				-webkit-animation-duration: 1.5s
+				animation-duration: 1.5s
+			&:nth-child(4)
+				> div
+					background: #82e3c6
+					-webkit-transform: rotate(0deg)
+					transform: rotate(0deg)
+				-webkit-animation-duration: 3s
+				animation-duration: 3s
+	width: 200px !important
+	height: 200px !important
+	-webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px)
+	transform: translate(-100px, -100px) scale(1) translate(100px, 100px)
+
+/* ********** END Page Preloader ************* */
 
 
 /* ********** BLOG PAGE STLE ************* */
