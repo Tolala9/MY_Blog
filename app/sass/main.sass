@@ -870,12 +870,130 @@ $h: 3px
 /* ********** END ARCHIVE PAGE STLE ************* */
 
 
+/* ********** CATEGORY PAGE STLE ************* */
+.post-item-postpage
+	margin-top: 40px
+	margin-bottom: 40px
+
+	.post-inf-postpage
+		display: flex
+		flex-flow: row wrap
+		.post-cat-postpage
+			flex: 1
+			background-color: $accent
+			color: $white
+			height: 40px
+			font-size: 22px
+			line-height: 22px
+			font-weight: 300
+			text-transform: uppercase
+			display: flex
+			flex-direction: column
+			span
+				padding: 7px 3px 0px
+				margin: auto
+				line-height: 35px
+				// text-align: center
+				flex: 15
+			.gray-line
+				flex: 1
+				background-color: $bg
+				width: 100%
+
+		.post-cat-postpage	
+			a
+				color: $white	
+				padding: 0px
+				margin: auto
+				line-height: 35px
+				// text-align: center
+				flex: 15
+
+
+		.post-date-postpage
+			flex: 1
+			background-color: $light_block
+			color: $light_text
+			height: 40px
+			font-size: 22px
+			font-weight: 300
+			text-transform: uppercase
+			display: flex
+			flex-direction: column
+			span.date-wrap-postpage
+				display: flex
+				flex-flow: row wrap
+				justify-content: space-around
+				text-align: center
+				flex: 15
+				.day-postpage
+					flex: 1
+					text-align: right
+				.month-postpage
+					flex: 2
+					text-align: left
+					padding-left: 5px
+			.gray-line
+				flex: 1
+				background-color: $bg
+				width: 100%
+	.post-text-wrap-postpage
+		display: flex
+		.post-text-small-postpage
+			flex: 6
+			background-color: $white
+
+			h3
+				color: $dark_text
+				font-size: 22px
+				font-weight: 500
+				margin: 10px 20px 5px
+				line-height: 24px
+			p
+				color: $dark_text
+				font-size: 16px
+				line-height: 28px
+				font-weight: 300
+				margin: 0px 20px 10px
+				text-align: justify
+			.gray-line
+				display: block
+				background-color: $bg
+				width: 93%
+				height: 1px
+				margin: 0 20px 
+			.post-footer-postpage
+				margin: 5px 20px 10px
+				font-size: 14px
+				color: $light_text
+				.far
+					font-size: 12px
+					color: $light_text
+					margin-right: 10px
+				a
+					color: $light_text
+					transition: ease 0.5s
+					&:hover
+						color: $accent
+				.post-action-postpage
+					display: inline-block
+					float: right
+					.far
+						font-size: 12px
+						&:hover
+							color: $accent
+							cursor: pointer
+
+
+
+
 
 
 
 
 	
 
+/* ********** END CATEGORY PAGE STLE ************* */
 
 
 
@@ -883,7 +1001,6 @@ $h: 3px
 
 
 
-/* ********** END HOME CATEGORY STLE ************* */
 
 
 
