@@ -37,11 +37,14 @@ $(window).scroll(function() {
 
 /* SEARCH FIELD */
 $(".search-box").click(function(){
+
 	if ($(".search-field").is(":visible")) {
 		$(".search-field").fadeOut(600);
+		 
 		
 	} else {
 		$(".search-field").fadeIn(600);
+		
 	};
 }); 
 /* END SEARCH FIELD */
@@ -80,6 +83,21 @@ $(window).on('load', function() {
 		$('.lds-wedges, .lds-css').delay(50).fadeOut('slow');
 	});
 /* END Preloader */
+
+/* Animation */
+$(".post-item").addClass("animated bounceInUp");
+$(".archive-item").addClass("animated bounceInDown");
+$(".category-item").addClass("animated bounceInDown");
+$(".post-item").on("click", function(){
+	$(this).addClass("animated slideOutRight")
+});
+$(".category-item").on("click", function(){
+	$(this).addClass("animated slideOutRight")
+});
+$(".archive-item").on("click", function(){
+	$(this).addClass("animated slideOutRight")
+});
+/* END Animation */
 
 
 

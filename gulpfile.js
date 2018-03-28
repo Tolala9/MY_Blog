@@ -27,6 +27,7 @@ gulp.task('common-js', function() {
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/animate/animate-css.js',
 		'app/js/common.min.js', // Always at the end
 		])  
 	.pipe(concat('scripts.min.js'))
@@ -92,9 +93,9 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
 gulp.task('deploy', function() {
 
 	var conn = ftp.create({
-		host:      'hostname.com',
-		user:      'username',
-		password:  'userpassword',
+		host:      'files.000webhost.com',
+		user:      'tolala9blog',
+		password:  'tolala333',
 		parallel:  10,
 		log: gutil.log
 	});

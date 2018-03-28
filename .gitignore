@@ -2,6 +2,7 @@
 /dist/
 /.git/
 /.gitignore/
+/gulpfile.js/
 /app/css/
 /**/*.psd
 /**/Thumbs.db
