@@ -79,9 +79,14 @@ $(window).on('load', function() {
 /* END Preloader */
 
 /* Preloader */
-$(window).on('load', function() {
-		$('.lds-wedges, .lds-css').delay(50).fadeOut('slow');
-	});
+var $loading = $('.lds-wedges, .lds-css').delay(150).fadeOut('slow');
+$(document)
+  .ajaxStart(function () {
+    $loading.show();
+  })
+  .ajaxStop(function () {
+    $loading.hide();
+  });
 /* END Preloader */
 
 /* Animation */
@@ -100,6 +105,10 @@ $(".archive-item").on("click", function(){
 /* END Animation */
 
 
+$(document).ready(function($) {
+    var Body = $('body');
+    Body.addClass('preloader-site');
+});
 
 
 

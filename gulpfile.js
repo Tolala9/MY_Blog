@@ -42,8 +42,8 @@ gulp.task('browser-sync', function() {
 			baseDir: 'app'
 		},
 		notify: false,
-		tunnel: true,
-		tunnel: "myblog", //Demonstration page: http://projectmane.localtunnel.me
+		// tunnel: true,
+		// tunnel: "myblog", //Demonstration page: http://projectmane.localtunnel.me
 	});
 });
 
@@ -88,6 +88,10 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
 		'app/fonts/**/*',
 		]).pipe(gulp.dest('dist/fonts'));
 
+	var buildWebFonts = gulp.src([
+		'app/webfonts/**/*',
+		]).pipe(gulp.dest('dist/webfonts'));
+
 });
 
 gulp.task('deploy', function() {
@@ -105,7 +109,7 @@ gulp.task('deploy', function() {
 	'dist/.htaccess',
 	];
 	return gulp.src(globs, {buffer: false})
-	.pipe(conn.dest('/path/to/folder/on/server'));
+	.pipe(conn.dest('/public_html'));
 
 });
 
