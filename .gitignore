@@ -2,6 +2,8 @@
 /dist/
 /.git/
 /.gitignore/
+*.sublime-project
+*.sublime-workspace
 /gulpfile.js/
 /app/css/
 /**/*.psd

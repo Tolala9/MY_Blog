@@ -65,11 +65,11 @@ else	{
 /* END SEARCH FIELD  for xs devices*/
 
 /* Active tab on menu */
-$(".menu-line ul li").click(function () {
-    $(".menu-line ul li").removeClass("active");
-    $(".menu-line-footer ul li").removeClass("active");
-    $(this).addClass("active");   
-});
+// $(".menu-line ul li").click(function () {
+//     $(".menu-line ul li").removeClass("active");
+//     $(".menu-line-footer ul li").removeClass("active");
+//     $(this).addClass("active");   
+// });
 /* end Active tab on menu */
 
 /* Preloader */
@@ -93,9 +93,13 @@ $(document)
 $(".post-item").addClass("animated bounceInUp");
 $(".archive-item").addClass("animated bounceInDown");
 $(".category-item").addClass("animated bounceInDown");
-$(".post-item").on("click", function(){
-	$(this).addClass("animated slideOutRight")
+$(".post-img").on("click", function(){
+	$(".post-item").addClass("animated slideOutRight")
 });
+$(".post-inf").on("click", function(){
+	$(".post-item").addClass("animated slideOutRight")
+}); 
+
 $(".category-item").on("click", function(){
 	$(this).addClass("animated slideOutRight")
 });
